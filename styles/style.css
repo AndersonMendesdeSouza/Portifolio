@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container-portifolio{
+
+.container-portifolio {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,104 +12,192 @@
     height: 100vh;
     z-index: 10;
     animation: efeitoZomm 1.8s ease;
-overflow-y:auto;
-scrollbar-width: none;
+    overflow-y: auto;
+    scrollbar-width: none;
 
 }
-@keyframes efeitoZomm{
-    0%{
+
+@keyframes efeitoZomm {
+    0% {
         transform: scale(1.2);
         opacity: 0;
     }
-       100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
-.cabecalho{
+
+.cabecalho {
     padding-top: 100px;
     display: flex;
-justify-content: center;
-align-items: center;
- text-align: center;
- width: 100%;
- height: 100vh;
-  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
 }
 
-.cabecalho nav{
+.cabecalho nav {
     display: flex;
     flex-direction: column;
-   
-}
-.cabecalho nav h3{
-color: white;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 16px;
 
 }
-.cabecalho nav h1{
- font-family:Verdana, Geneva, Tahoma, sans-serif;
- color: transparent;
-  font-size: 50px;
-  -webkit-text-stroke:
- 3px white; font-weight: 600;
+
+.cabecalho nav h3 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.cabecalho nav h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke:
+        3px white;
+    font-weight: 600;
     text-shadow: 0 0 2px rgb(3, 3, 3), 0 0 2px rgb(255, 255, 255), 0 0 200px rgb(251, 254, 254);
 }
-.icones-nav{
-display: flex;
-flex-direction: column;
-gap: 50px;
-color: white;
+
+.icones-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: white;
 
 }
-.icones{
+
+.icones {
     margin-top: 15px;
     display: flex;
-justify-content: center;
-gap: 15px;
-font-size: 30px;
+    justify-content: center;
+    gap: 15px;
+    font-size: 30px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-#setinha{
- 
+
+#setinha {
+
     font-size: 19px;
     animation: setinhaFlut 2s infinite alternate ease-in-out;
-     text-shadow: 0 0 2px rgb(3, 3, 3), 0 0 20px rgb(255, 255, 255), 0 0 200px rgb(251, 254, 254);
+    text-shadow: 0 0 2px rgb(3, 3, 3), 0 0 20px rgb(255, 255, 255), 110 0 2px rgb(251, 254, 254);
 }
- 
 
 
- 
 
-@keyframes setinhaFlut{
-    0%{
+
+
+@keyframes setinhaFlut {
+    0% {
         padding-top: 10px;
     }
-      100%{
+
+    100% {
         padding-bottom: 10px;
     }
 }
 
-.container-corpo{
 
-    margin-top: 250px;
-}
-.boas-vindas{
+.boas-vindas {
     color: white;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-display: flex;
-flex-direction: column;
-gap: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-.boas-vindas h1{
+
+.boas-vindas h1 {
     font-size: 25px;
-    
+
 }
-.boas-vindas p{
+
+.boas-vindas p {
     font-size: 15px;
+}
+
+.container-corpo {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.projetos {
+    width: 95%;
+    height: 250vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.projetos-esquerdo {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projetos-direito {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#todosProjetos {
+    margin: 50px;
+
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.escopoprojeto {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+.escopoprojeto img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.escopoprojeto h3 {
+     margin-top: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bold;
+font-size: 22px;
+ 
+}
+
+.escopoprojeto img:hover{
+    transform: scale(1.1);
 }
